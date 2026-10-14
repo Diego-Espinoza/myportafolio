@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-code"></i> Diego Espinoza</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="texto">
+                <span class="greeting">¡Hola! Mi nombre es</span>
+                <h2>Royel Diego Espinoza Poma</h2>
+                <p class="subtitulo">Egresado de <span class="highlight">Ingeniería de Sistemas</span></p>
+
+                <div class="redes">
+
+                    <a href="https://linkedin.com/in/diego-espinoza-4ab9a9347/?isSelfProfile=true" target="_blank"
+                        class="method-card">
+                        <div class="method-icon color-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Diego-Espinoza" target="_blank" class="method-card">
+                        <div class="method-icon color-github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </a>
+                    <a href="https://facebook.com/diego.espinoza.824029?locale=es_LA" target="_blank"
+                        class="method-card">
+                        <div class="method-icon color-facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <a href="#contacto" class="boton">
+                    Contáctame <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Imagen de Perfil (Lado Derecho) -->
+            <div class="contenedor img">
+                <img src="img/dep.png" alt="Royel Diego Espinoza Poma">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor-seccion">
+            <div class="titulo-seccion">
+                <h2>Sobre Mí</h2>
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <div class="contenido-sobremi">
+                <!-- Columna Izquierda: Tarjeta de Presentación Principal -->
+                <div class="tarjeta-perfil">
+                    <div class="insignia-estado">
+                        <span class="punto-activo"></span> Disponible para laborar
+                    </div>
+                    <h3>Perfil Profesional</h3>
+                    <p>
+                        Egresado de <strong>Ingeniería de Sistemas</strong> con experiencia práctica en el ciclo
+                        completo de desarrollo de software: análisis de requerimientos, diseño, desarrollo, pruebas e
+                        implementación.
+                    </p>
+                    <p>
+                        Especializado en **desarrollo web (PHP, MySQL, JS, Bootstrap)**, creación de paneles
+                        administrativos y arquitectura de bases de datos relacionales. Enfocado en soluciones
+                        eficientes, código limpio y buenas prácticas.
+                    </p>
+
+                    <!-- Grid de Datos Rápidos -->
+                    <div class="datos-rapidos">
+                        <div class="dato-item">
+                            <i class="fa-solid fa-graduation-cap color-educacion"></i>
+                            <div>
+                                <span>Educación</span>
+                                <strong>Ing. de Sistemas</strong>
+                            </div>
+                        </div>
+                        <div class="dato-item">
+                            <i class="fa-solid fa-location-dot color-ubicacion"></i>
+                            <div>
+                                <span>Ubicación</span>
+                                <strong>Lima, Perú</strong>
+                            </div>
+                        </div>
+                        <div class="dato-item">
+                            <i class="fa-solid fa-language color-idiomas"></i>
+                            <div>
+                                <span>Idiomas</span>
+                                <strong>Español / Inglés Téc.</strong>
+                            </div>
+                        </div>
+                        <div class="dato-item">
+                            <i class="fa-solid fa-envelope color-contacto"></i>
+                            <div>
+                                <span>Contacto Directo</span>
+                                <strong>diegoespinozapoma7@gmail.com</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Tarjetas de Enfoque y Destacados -->
+                <div class="tarjetas-destacadas">
+                    <div class="tarjeta-mini color-whatsapp">
+                        <div class="icono-tarjeta">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Desarrollo Full Stack Junior</h4>
+                            <p>Creación de sistemas web dinámicos con operaciones CRUD seguras, manejo de sesiones y
+                                arquitectura MVC/PDO.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-mini color-linkedin">
+                        <div class="icono-tarjeta">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Gestión de Bases de Datos</h4>
+                            <p>Diseño ER, modelado de tablas, consultas SQL optimizadas y migración de datos a
+                                servidores en producción.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-mini color-email">
+                        <div class="icono-tarjeta">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Análisis & Métodos Ágiles</h4>
+                            <p>Creación de Dashboards con Power BI/BigQuery y trabajo colaborativo estructurado bajo
+                                marco Scrum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILL  -->
+    <section id="skills" class="skills">
+        <div class="contenedor-seccion">
+            <div class="titulo-seccion">
+                <span class="badge-subtitulo"><i class="fa-solid fa-microchip"></i> Tech Stack & Toolkit</span>
+                <h2>Habilidades Técnicas</h2>
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <!-- Filtros Dinamicos  -->
+            <div class="skills-filter-container">
+                <button class="skill-filter-btn active" onclick="filtrarSkills('todos', this)">
+                    <i class="fa-solid fa-border-all"></i> Todos
+                </button>
+                <button class="skill-filter-btn" onclick="filtrarSkills('lenguajes', this)">
+                    <i class="fa-solid fa-code"></i> Lenguajes
+                </button>
+                <button class="skill-filter-btn" onclick="filtrarSkills('bd', this)">
+                    <i class="fa-solid fa-database"></i> Bases de Datos
+                </button>
+                <button class="skill-filter-btn" onclick="filtrarSkills('frontend', this)">
+                    <i class="fa-solid fa-layer-group"></i> Frontend & Web
+                </button>
+                <button class="skill-filter-btn" onclick="filtrarSkills('herramientas', this)">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Herramientas
+                </button>
+                <button class="skill-filter-btn" onclick="filtrarSkills('datos-redes', this)">
+                    <i class="fa-solid fa-chart-network"></i> Data Analytics
+                </button>
+            </div>
+
+            <!-- Grid de Tarjetas de Habilidades -->
+            <div class="skills-grid" id="skillsGrid">
+
+                <!-- LENGUAJES -->
+                <div class="skill-card" data-category="lenguajes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/PHP-logo.svg.webp" alt="PHP"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-php fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>PHP</h3>
+                        <span class="skill-tag">Backend Principal</span>
+                        <p>PDO, CRUDs seguros, Sesiones y Arquitectura MVC.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="lenguajes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/javascript_logo.png" alt="JavaScript"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-js fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>JavaScript (ES6+)</h3>
+                        <span class="skill-tag">Interactividad</span>
+                        <p>DOM, Fetch API, Validaciones y Eventos Asíncronos.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="lenguajes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/Python-logo.webp" alt="Python"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-python fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <span class="skill-tag">Lógica / Scripts</span>
+                        <p>Estructuras de datos, automatización y scripts.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="lenguajes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/java_logo.png" alt="Java"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-java fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Java</h3>
+                        <span class="skill-tag">Spring Boot / Android / POO</span>
+                        <p>POO, Android Studio y conexión API REST.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="lenguajes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/C_sharp_logo.webp" alt="C#"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-code fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>C#</h3>
+                        <span class="skill-tag">.NET / Software POO</span>
+                        <p>Lógica de programación orientada a objetos.</p>
+                    </div>
+                </div>
+
+                <!-- BASES DE DATOS -->
+                <div class="skill-card" data-category="bd">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/MySQL-Logo.png" alt="MySQL"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-database fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>MySQL</h3>
+                        <span class="skill-tag">Base de Datos</span>
+                        <p>Diseño ER, Consultas Avanzadas, PDO y Migración.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="bd">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/sqlite_logo.webp" alt="SQLite"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-database fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>SQLite</h3>
+                        <span class="skill-tag">Embedded DB</span>
+                        <p>Almacenamiento liviano local para apps.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="bd">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/sqlserver_logo.png" alt="SQLite"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-database fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>SQL Server</h3>
+                        <span class="skill-tag">Base de Datos</span>
+                        <p>Almacenamiento liviano local para apps.</p>
+                    </div>
+                </div>
+
+                <!-- FRONTEND & WEB -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/HTML5_logo.png" alt="HTML5"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-html5 fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>HTML & CSS</h3>
+                        <span class="skill-tag">Estructura & Estilo</span>
+                        <p>Maquetación Semántica, Flexbox, Grid y Animaciones.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="frontend">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/Bootstrap_logo.webp" alt="Bootstrap"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-bootstrap fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Bootstrap 5</h3>
+                        <span class="skill-tag">Framework Responsive</span>
+                        <p>Diseño ágil de paneles de administración y layouts.</p>
+                    </div>
+                </div>
+
+                <!-- HERRAMIENTAS -->
+                <div class="skill-card" data-category="herramientas">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/github_logo.png" alt="Git & GitHub"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-brands fa-github fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Git / GitHub</h3>
+                        <span class="skill-tag">Control de Versiones</span>
+                        <p>Repositorios, ramas, commits y control colaborativo.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="herramientas">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/vs_code.webp" alt="VS Code"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-code fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>VS Code</h3>
+                        <span class="skill-tag">Entorno Dev</span>
+                        <p>Depurar y organizar código.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="herramientas">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/xampp_logo.png" alt="VS Code"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-code fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>XAMPP</h3>
+                        <span class="skill-tag">Entorno Dev</span>
+                        <p>Apache, phpMyAdmin y configuración de entornos.</p>
+                    </div>
+                </div>
+
+                <!-- DATOS -->
+                <div class="skill-card" data-category="datos-redes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/Power_BI_Logo.webp" alt="Power BI"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-chart-column fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Power BI</h3>
+                        <span class="skill-tag">Análisis de información</span>
+                        <p>Dashboards interactivos, visualización de datos e indicadores</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="datos-redes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/bigquery_logo.webp" alt="Power BI"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-chart-column fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>BigQuery</h3>
+                        <span class="skill-tag">Consultas/Filtrado</span>
+                        <p>Agrupación, JOIN, análisis y extracción de información para reportes.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="datos-redes">
+                    <div class="glow-effect"></div>
+                    <div class="skill-icon">
+                        <img src="img/excel_logo.webp" alt="MikroTik"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-network-wired fallback-icon"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Excel</h3>
+                        <span class="skill-tag">Macros/VBA </span>
+                        <p>Gestión de datos, tablas dinámicas, funciones avanzadas y automatización de tareas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM O EXPERIENCIA -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenedor-seccion">
+            <div class="titulo-seccion">
+                <span class="badge-subtitulo"><i class="fa-solid fa-briefcase"></i> Trayectoria & Prácticas</span>
+                <h2>Experiencia Profesional</h2>
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <!-- Tarjeta de Experiencia Principal -->
+            <div class="timeline-container">
+                <div class="timeline-card">
+                    <!-- Banner Superior de la Empresa / Entidad -->
+                    <div class="card-header-exp">
+                        <div class="empresa-info">
+                            <div class="skill-icon">
+                                <img src="img/favicon_ugel.png" alt="Logo UGEL Dos de Mayo" class="logo-img">
+                            </div>
+                            <div>
+                                <h3>UGEL Dos de Mayo</h3>
+                                <span class="subtitulo-entidad">Unidad de Gestión Educativa Local - Huánuco, Perú</span>
+                            </div>
+                        </div>
+                        <div class="periodo-badge">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>Feb 2026 – Jul 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Detalle del Cargo Principal -->
+                    <div class="cargo-banner">
+                        <div class="cargo-title">
+                            <h4>Practicante de Ing. de Sistemas – Desarrollo Web Full Stack</h4>
+                            <span class="status-chip"><i class="fa-solid fa-circle-check"></i> Proyecto Desplegado en
+                                Producción</span>
+                        </div>
+                        <p class="cargo-descripcion">
+                            Colaboré activamente en el ciclo completo de desarrollo (*Software Development Life Cycle*)
+                            de un sistema web dinámico para la gestión institucional y pública de la entidad.
+                        </p>
+                    </div>
+
+                    <!-- Desglose de Contribuciones Técnicas Categorizadas -->
+                    <div class="bloques-logros">
+                        <div class="logro-box">
+                            <div class="logro-header">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <h5>Desarrollo Web, CRUDs & Seguridad</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Sistema Web Dinámico:</strong> Desarrollo de panel administrativo integral
+                                    desplegado sobre servidor Apache, abarcando análisis, maquetación, lógica backend y
+                                    pruebas.</li>
+                                <li><strong>Gestión de Contenidos:</strong> Creación de módulos para administración
+                                    fluida de noticias, comunicados institucionales y convocatorias públicas.</li>
+                            </ul>
+                        </div>
+
+                        <div class="logro-box">
+                            <div class="logro-header">
+                                <i class="fa-solid fa-server"></i>
+                                <h5>Base de Datos & Arquitectura</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Modelado Relacional:</strong> Diseño completo del modelo Entidad-Relación
+                                    (ER) de 8 tablas con claves foráneas, índices y consultas SQL de alto rendimiento.
+                                </li>
+                                <li><strong>Migración a Producción:</strong> Exportación, configuración y pruebas de la
+                                    base de datos MySQL en entorno de producción.</li>
+                            </ul>
+                        </div>
+
+                        <div class="logro-box">
+                            <div class="logro-header">
+                                <i class="fa-solid fa-users-gear"></i>
+                                <h5>Metodología Ágil & Infraestructura</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Metodología Scrum:</strong> Gestión iterativa mediante sprints,
+                                    planificación de actividades y entregas funcionales continuas.</li>
+                                <li><strong>Soporte Técnico & Redes:</strong> Diagnóstico de conectividad de red,
+                                    direccionamiento IP, redes LAN y mantenimiento preventivo de equipos informáticos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- imagnes del trabajo -->
+                    <div class="kpi-grid">
+                        <div class="kpi-item">
+                            <img src="img/bd_tablas.png">
+                        </div>
+                        <div class="kpi-item">
+                            <img src="img/login.png">
+                        </div>
+                        <div class="kpi-item">
+                            <img src="img/inicio.png">
+                        </div>
+                        <div class="kpi-item">
+                            <img src="img/produccion.png">
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Aplicado -->
+                    <div class="tech-stack-exp">
+                        <span class="tech-stack-title">Tecnologías Aplicadas:</span>
+                        <div class="tech-tags">
+                            <span><i class="fa-brands fa-php"></i> PHP (PDO)</span>
+                            <span><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                            <span><i class="fa-solid fa-server"></i> Apache</span>
+                            <span><i class="fa-solid fa-diagram-project"></i> Scrum</span>
+                            <span><i class="fa-solid fa-network-wired"></i> Redes & IP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE PROYECTOS ACADEMICOS -->
+    <section id="portafolio" class="proyectos-seccion">
+        <div class="contenedor-seccion">
+            <div class="titulo-seccion">
+                <span class="badge-subtitulo"><i class="fa-solid fa-code-branch"></i> Portafolio Destacado</span>
+                <h2>Proyectos Académicos</h2>
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <!-- Wrapper del Carrusel Centrado -->
+            <div class="carousel-wrapper">
+                <!-- Boton izquierda -->
+                <button class="carousel-btn btn-prev" id="prevBtn" aria-label="Proyecto Anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- Contenedor del Scroll Horizontal -->
+                <div class="carousel-track-container" id="carouselTrack">
+                    <div class="carousel-track">
+
+                        <!-- PROYECTO 1: FAUSTINDER -->
+                        <article class="proyecto-card">
+                            <div class="card-image-header">
+                                <div class="image-overlay"></div>
+                                <!-- Mockup visual o captura representativa -->
+                                <div class="project-mockup-placeholder color-1">
+                                    <i class="fa-solid fa-heart-circle-check"></i>
+                                    <span>FAUSTINDER</span>
+                                </div>
+                                <div class="card-year-badge">
+                                    <i class="fa-regular fa-calendar-check"></i> 2024
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="project-type"><i class="fa-solid fa-users"></i> Red Social
+                                    Universitaria</span>
+                                <h3 class="project-title">FAUSTINDER</h3>
+
+                                <p class="project-description">
+                                    Plataforma web universitaria que integra autenticación segura, algoritmo de gestión
+                                    de coincidencias (matches), módulo de reportes estadísticos en tiempo real y panel
+                                    administrativo integral.
+                                </p>
+
+                                <div class="project-highlights">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Pruebas funcionales y de integración
+                                            exhaustivas previas al lanzamiento.</li>
+                                        <li><i class="fa-solid fa-check"></i> Panel de control para supervisión y
+                                            moderación de la comunidad.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="project-tools">
+                                    <span class="tools-label">Stack Utilizado:</span>
+                                    <div class="tools-tags">
+                                        <span><i class="fa-brands fa-php"></i> PHP</span>
+                                        <span><i class="fa-solid fa-database"></i> MySQL</span>
+                                        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                                        <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                                        <span><i class="fa-solid fa-shield-halved"></i> Panel Admin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- PROYECTO 2: APLICACIÓN MÓVIL ANDROID -->
+                        <article class="proyecto-card">
+                            <div class="card-image-header">
+                                <div class="image-overlay"></div>
+                                <div class="project-mockup-placeholder color-2">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>ANDROID + API REST</span>
+                                </div>
+                                <div class="card-year-badge">
+                                    <i class="fa-regular fa-calendar-check"></i> 2025
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="project-type"><i class="fa-solid fa-map-location-dot"></i> App Móvil &
+                                    Servicios Cloud</span>
+                                <h3 class="project-title">Aplicación Móvil Android con Servidor Web</h3>
+
+                                <p class="project-description">
+                                    Solución móvil nativa conectada a una arquitectura de servicios web API REST,
+                                    ofreciendo autenticación, consumo de servicios de geolocalización en tiempo real y
+                                    procesamiento multimedia.
+                                </p>
+
+                                <div class="project-highlights">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Validación estricta de endpoints y consumo
+                                            optimizado de JSON.</li>
+                                        <li><i class="fa-solid fa-check"></i> Pruebas de compatibilidad y rendimiento
+                                            multi-dispositivo Android.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="project-tools">
+                                    <span class="tools-label">Stack Utilizado:</span>
+                                    <div class="tools-tags">
+                                        <span><i class="fa-brands fa-android"></i> Android (Java)</span>
+                                        <span><i class="fa-solid fa-cloud"></i> API REST</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> Geolocalización</span>
+                                        <span><i class="fa-solid fa-photo-film"></i> Multimedia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- PROYECTO 3: POWER BI & BIGQUERY -->
+                        <article class="proyecto-card">
+                            <div class="card-image-header">
+                                <div class="image-overlay"></div>
+                                <div class="project-mockup-placeholder color-3">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    <span>POWER BI & BIGQUERY</span>
+                                </div>
+                                <div class="card-year-badge">
+                                    <i class="fa-regular fa-calendar-check"></i> 2024
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="project-type"><i class="fa-solid fa-chart-line"></i> Business Intelligence
+                                    & Data Analytics</span>
+                                <h3 class="project-title">Análisis de Datos con Power BI y BigQuery</h3>
+
+                                <p class="project-description">
+                                    Solución de Inteligencia de Negocios enfocada en la ingesta, procesamiento de gran
+                                    volumen de datos y construcción de dashboards gerenciales para la toma de decisiones
+                                    estratégicas.
+                                </p>
+
+                                <div class="project-highlights">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Consultas SQL avanzadas y optimizadas en
+                                            entornos BigQuery.</li>
+                                        <li><i class="fa-solid fa-check"></i> Dashboards interactivos con métricas clave
+                                            (KPIs) para soporte ejecutivo.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="project-tools">
+                                    <span class="tools-label">Stack Utilizado:</span>
+                                    <div class="tools-tags">
+                                        <span><i class="fa-solid fa-chart-column"></i> Power BI</span>
+                                        <span><i class="fa-brands fa-google"></i> GCP BigQuery</span>
+                                        <span><i class="fa-solid fa-database"></i> SQL Avanzado</span>
+                                        <span><i class="fa-solid fa-brain"></i> Data Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Boton Derecha -->
+                <button class="carousel-btn btn-next" id="nextBtn" aria-label="Proyecto Siguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Indicadores (Dots) -->
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- SECCION DE CONTACTO -->
+    <section id="contacto" class="contacto-seccion">
+        <div class="contenedor-seccion">
+            <div class="titulo-seccion">
+                <span class="badge-subtitulo"><i class="fa-solid fa-paper-plane"></i> Hablemos</span>
+                <h2>Centro de Contacto</h2>
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <div class="contacto-grid">
+
+                <!-- COLUMNA IZQUIERDA: Info Directa & Status -->
+                <div class="contacto-info-card">
+                    <div class="status-live-container">
+                        <span class="pulse-dot"></span>
+                        <div class="status-text">
+                            <strong>Disponible para oportunidades</strong>
+                            <p>Apto para Prácticas / Roles Junior & Proyectos Freelance</p>
+                        </div>
+                    </div>
+
+                    <h3>¿Tienes una propuesta o proyecto en mente?</h3>
+                    <p class="contacto-intro">
+                        Estoy listo para aportar mis conocimientos en Desarrollo Web, Bases de Datos y Análisis de Datos
+                        a tu equipo. ¡Conectemos directamente!
+                    </p>
+
+                    <!-- Tarjetas de Acceso Rápido -->
+                    <div class="contact-methods">
+                        <a href="mailto:diegoespinozapoma7@gmail.com" class="method-card">
+                            <div class="method-icon color-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Correo Electrónico</span>
+                                <span class="method-value">diegoespinozapoma7@gmail.com</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+                        </a>
+
+                        <a href="https://wa.me/51910860346" target="_blank" class="method-card">
+                            <div class="method-icon color-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">WhatsApp Directo</span>
+                                <span class="method-value">(+51) 910 860 346</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/in/diego-espinoza-4ab9a9347/?isSelfProfile=true" target="_blank"
+                            class="method-card">
+                            <div class="method-icon color-linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Perfil Profesional</span>
+                                <span class="method-value">Diego Espinoza</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+                        </a>
+
+                        <a href="https://github.com/Diego-Espinoza" target="_blank" class="method-card">
+                            <div class="method-icon color-github">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Código Fuente & Repositorios</span>
+                                <span class="method-value">Diego-Espinoza</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="location-badge">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Lima, Perú • Disponible para Trabajo Remoto o Presencial</span>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: Formulario de Mensaje -->
+                <div class="contacto-form-card">
+                    <form id="contactForm" class="cyber-form">
+                        <h4 class="form-title"><i class="fa-solid fa-message"></i> Envía un mensaje directo</h4>
+
+                        <div class="form-group">
+                            <label class="input-label">Motivo de contacto</label>
+                            <div class="motivo-chips">
+                                <label class="chip-option">
+                                    <input type="radio" name="motivo" value="oferta" checked>
+                                    <span><i class="fa-solid fa-briefcase"></i> Oportunidad Laboral</span>
+                                </label>
+                                <label class="chip-option">
+                                    <input type="radio" name="motivo" value="freelance">
+                                    <span><i class="fa-solid fa-laptop-code"></i> Proyecto Web</span>
+                                </label>
+                                <label class="chip-option">
+                                    <input type="radio" name="motivo" value="consulta">
+                                    <span><i class="fa-solid fa-comments"></i> Saludo / Consulta</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nombre" class="input-label">Tu Nombre o Empresa</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user input-icon"></i>
+                                <input type="text" id="nombre" name="nombre"
+                                    placeholder="Ej. Ana Martínez / Tech Solutions" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="input-label">Tu Correo Electrónico</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-at input-icon"></i>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@empresa.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" class="input-label">Detalles del Mensaje</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-solid fa-pen input-icon"></i>
+                                <textarea id="mensaje" name="mensaje" rows="4"
+                                    placeholder="Describe brevemente tu propuesta, proyecto o vacante..."
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-enviar-cyber">
+                            <span>Enviar Mensaje</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="cyber-footer">
+        <div class="footer-glow-line"></div>
+
+        <div class="contenedor-seccion footer-content">
+            <div class="footer-grid">
+
+                <!-- Columna 1: Marca & Perfil -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                        <span class="logo-text">Ing. Sistemas</span>
+                    </div>
+                    <p class="footer-bio">
+                        Apasionado por el Desarrollo Web Full Stack, Arquitectura de Bases de Datos y Business
+                        Intelligence. Construyendo soluciones digitales sólidas y eficientes.
+                    </p>
+                    <div class="footer-location">
+                        <i class="fa-solid fa-location-dot"></i> Lima, Perú
+                    </div>
+                </div>
+
+                <!-- Columna 2: Navegacion rapida -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="#sobremi"><i class="fa-solid fa-chevron-right"></i> Sobre Mí</a></li>
+                        <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Habilidades</a></li>
+                        <li><a href="#curriculum"><i class="fa-solid fa-chevron-right"></i> Experiencia</a></li>
+                        <li><a href="#portafolio"><i class="fa-solid fa-chevron-right"></i> Proyectos</a></li>
+                        <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Tech Stack Favorito -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Especialidades</h4>
+                    <div class="footer-tech-badges">
+                        <span>PHP PDO</span>
+                        <span>C# / .NET </span>
+                        <span>Java / Spring Boot, Android</span>
+                        <span>MySQL</span>
+                        <span>API REST</span>
+                        <span>Power BI</span>
+                        <span>BigQuery</span>
+                        <span>Scrum</span>
+                        <span>Apache</span>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Conexion Social & Back to Top -->
+                <div class="footer-col social-col">
+                    <h4 class="footer-title">Redes & Código</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://linkedin.com/in/diego-espinoza-4ab9a9347/?isSelfProfile=true" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Diego-Espinoza" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/51910860346" target="_blank" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:diegoespinozapoma7@gmail.com" aria-label="Correo">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="back-to-top-wrapper">
+                        <a href="#inicio" class="btn-back-to-top" id="backToTop" aria-label="Volver arriba">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <span>Volver Arriba</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Barra Inferior de Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Diseñado & Desarrollado por Royel Diego Espinoza Poma | Todos
+                    los derechos reservados.</p>
+                <div class="footer-bottom-badge">
+                    <span class="status-pulse-sm"></span> Full Stack Developer
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
